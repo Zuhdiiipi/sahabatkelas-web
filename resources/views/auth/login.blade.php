@@ -21,7 +21,7 @@
     <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur-xl">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                
+                <img src="/img/logo.png" alt="Logo" class="h-8 w-auto">
                 <div>
                     <p class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 tracking-tight">SahabatKelas</p>
                 </div>
