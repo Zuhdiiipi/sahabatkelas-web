@@ -94,7 +94,6 @@
             
             <!-- Card 1 -->
             <div class="bg-white/60 backdrop-blur-lg border border-white/40 rounded-2xl p-8 shadow-xl shadow-gray-200/30 border-t-4 border-t-teal-500 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-teal-50 transition-colors">01</div>
                 <div class="w-14 h-14 bg-teal-50 text-teal-600 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
@@ -104,7 +103,6 @@
 
             <!-- Card 2 -->
             <div class="bg-white/60 backdrop-blur-lg border border-white/40 rounded-2xl p-8 shadow-xl shadow-gray-200/30 border-t-4 border-t-blue-500 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-blue-50 transition-colors">02</div>
                 <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                 </div>
@@ -114,7 +112,6 @@
 
             <!-- Card 3 -->
             <div class="bg-white/60 backdrop-blur-lg border border-white/40 rounded-2xl p-8 shadow-xl shadow-gray-200/30 border-t-4 border-t-yellow-400 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-yellow-50 transition-colors">03</div>
                 <div class="w-14 h-14 bg-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                 </div>
@@ -124,7 +121,6 @@
 
             <!-- Card 4 -->
             <div class="bg-white/60 backdrop-blur-lg border border-white/40 rounded-2xl p-8 shadow-xl shadow-gray-200/30 border-t-4 border-t-teal-600 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-teal-50 transition-colors">04</div>
                 <div class="w-14 h-14 bg-teal-50 text-teal-700 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                 </div>
@@ -367,7 +363,7 @@
 <div id="login-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="fixed inset-0 bg-gray-900/60 transition-opacity backdrop-blur-sm" onclick="closeLoginModal()"></div>
 
-    <div class="relative transform overflow-hidden rounded-3xl bg-white p-8 text-left shadow-2xl transition-all w-full max-w-md border border-teal-100">
+    <div class="relative transform overflow-hidden rounded-3xl bg-gradient-to-br from-blue-50 via-white to-teal-50 p-8 text-left shadow-2xl transition-all w-full max-w-md border border-teal-100">
         <button type="button" onclick="closeLoginModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-500 bg-gray-50 hover:bg-gray-100 rounded-full p-2 transition-colors">
             <span class="sr-only">Close</span>
             <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
