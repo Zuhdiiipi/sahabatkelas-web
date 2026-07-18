@@ -73,7 +73,7 @@
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
                 Mengenali lebih awal, <br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">mendampingi lebih terarah</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">mendampingi lebih terarah.</span>
             </h1>
             
             <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
