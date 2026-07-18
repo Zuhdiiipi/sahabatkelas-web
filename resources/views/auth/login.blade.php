@@ -63,12 +63,12 @@
 
 <main id="beranda" class="pt-20">
     <!-- Hero Section -->
-    <section class="relative bg-slate-900 overflow-hidden min-h-[500px] flex items-center pt-24 pb-20 lg:pb-40">
-        <img src="/img/hero_students.png" alt="Siswa di Sekolah Bebas Perundungan" class="absolute inset-0 w-full h-full object-cover opacity-20" />
+    <section class="relative bg-slate-900 overflow-hidden min-h-[100svh] lg:min-h-[500px] flex items-center pt-24 pb-20 lg:pb-40">
+        <img src="/img/hero_students.png" alt="Siswa di Sekolah Bebas Perundungan" class="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay" />
         
         <!-- Gradient Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-teal-900/50 to-blue-900/50"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-teal-900/40 to-blue-900/40"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
