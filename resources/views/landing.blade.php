@@ -34,19 +34,31 @@
             scrollbar-width: none;
         }
 
-        .hero-grid {
-            background-image:
-                linear-gradient(
-                    rgba(20, 184, 166, 0.08) 1px,
-                    transparent 1px
-                ),
-                linear-gradient(
-                    90deg,
-                    rgba(20, 184, 166, 0.08) 1px,
-                    transparent 1px
-                );
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
 
-            background-size: 32px 32px;
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+
+        @keyframes blob {
+            0% {
+                transform: translate(0px, 0px) scale(1);
+            }
+            33% {
+                transform: translate(30px, -50px) scale(1.1);
+            }
+            66% {
+                transform: translate(-20px, 20px) scale(0.9);
+            }
+            100% {
+                transform: translate(0px, 0px) scale(1);
+            }
         }
     </style>
 </head>
@@ -192,16 +204,25 @@
     {{-- Hero --}}
     <section
         class="relative overflow-hidden bg-gradient-to-b
-               from-blue-50/80 via-white to-white hero-grid"
+               from-blue-50/50 via-white to-white"
     >
+        <!-- Animated Blobs (Style Logo) -->
         <div
-            class="absolute -top-24 -right-24 w-96 h-96
-                   rounded-full bg-teal-200/30 blur-3xl"
+            class="absolute top-0 -left-10 w-96 h-96
+                   rounded-full bg-teal-300/30 blur-3xl
+                   mix-blend-multiply animate-blob"
         ></div>
 
         <div
-            class="absolute top-60 -left-32 w-80 h-80
-                   rounded-full bg-blue-200/20 blur-3xl"
+            class="absolute top-20 -right-20 w-[30rem] h-[30rem]
+                   rounded-full bg-blue-300/30 blur-3xl
+                   mix-blend-multiply animate-blob animation-delay-2000"
+        ></div>
+
+        <div
+            class="absolute -bottom-32 left-1/2 w-96 h-96
+                   rounded-full bg-cyan-300/30 blur-3xl
+                   mix-blend-multiply animate-blob animation-delay-4000"
         ></div>
 
         <div
