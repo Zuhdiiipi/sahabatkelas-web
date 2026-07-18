@@ -8,8 +8,13 @@ use App\Http\Controllers\GuruController;
 use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
-    return view('landing');
-})->name('landing');
+    return redirect('/login');
+});
+
+Route::view(
+    '/landing',
+    'landing'
+)->name('landing');
 
 // Rute untuk tamu (belum login)
 Route::middleware('guest')->group(function () {
