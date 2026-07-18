@@ -8,10 +8,17 @@
     $iconTidakAktif = 'text-teal-300 group-hover:text-white';
 @endphp
 
+<!-- Overlay untuk mobile -->
+<div 
+    id="sidebar-overlay" 
+    class="fixed inset-0 bg-gray-900/50 z-40 lg:hidden hidden transition-opacity duration-300 opacity-0"
+    onclick="toggleSidebar()"
+></div>
+
 <!-- Sidebar -->
 <aside 
     id="sidebar" 
-    class="flex-shrink-0 z-50 w-64 bg-teal-800 border-r border-teal-900 flex flex-col h-screen text-white shadow-xl transition-all duration-300"
+    class="fixed inset-y-0 left-0 z-50 w-60 lg:w-64 bg-teal-800 border-r border-teal-900 transform -translate-x-full lg:translate-x-0 lg:static lg:inset-0 flex flex-col h-screen text-white shadow-xl transition-all duration-300"
 >
     <!-- Header Sidebar -->
     <div id="sidebar-header" class="h-16 flex items-center border-b border-teal-700/50 flex-shrink-0 relative w-full transition-all duration-300">
