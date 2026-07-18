@@ -33,28 +33,16 @@
 <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
 
     {{-- Bagian atas --}}
-    <div
-        class="max-w-7xl mx-auto px-4 py-3
-               flex justify-between items-center gap-4"
-    >
-        {{-- Hamburger & Logo --}}
+    <div class="w-full mx-auto px-4 py-3 flex justify-between items-center gap-4">
+        
+        {{-- Hamburger Menu Toggle --}}
         <div class="flex items-center gap-3">
-            <button onclick="toggleSidebar()" class="lg:hidden text-gray-500 hover:text-gray-700 focus:outline-none p-1 rounded-md hover:bg-gray-100 shrink-0">
+            <button onclick="toggleSidebar()" class="text-gray-500 hover:text-teal-700 focus:outline-none p-2 rounded-md hover:bg-teal-50 shrink-0 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
-            <a
-                href="{{ $homeUrl }}"
-                class="text-xl font-bold text-teal-700
-                       flex items-center gap-2 shrink-0"
-            >
-            <img src="/img/logo.png" alt="Logo" class="w-9 h-9 object-contain">
-
-            <span class="hidden sm:inline">
-                SahabatKelas
-            </span>
-        </a>
+        </div>
 
         {{-- Informasi pengguna (Profil Dropdown) --}}
         @auth

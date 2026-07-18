@@ -4,16 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'SahabatKelas')</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth transition for sidebar width */
+        #sidebar {
+            transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+        
+        /* Desktop Collapsed State */
+        @media (min-width: 1024px) {
+            html.sidebar-collapsed #sidebar {
+                width: 5rem; /* w-20 */
+            }
+            html.sidebar-collapsed .sidebar-text,
+            html.sidebar-collapsed #sidebar-logo-text,
+            html.sidebar-collapsed .sidebar-group-title {
+                display: none;
+                opacity: 0;
+            }
+            html.sidebar-collapsed #sidebar-header {
+                justify-content: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            html.sidebar-collapsed .sidebar-menu-item {
+                justify-content: center;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            html.sidebar-collapsed .sidebar-icon {
+                margin-right: 0;
+            }
+            html.sidebar-collapsed #sidebar-footer-box {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-50 font-sans flex h-screen overflow-hidden">
+    
+    <!-- Script untuk inisialisasi state agar tidak berkedip -->
+    <script>
+        if (localStorage.getItem('sidebarExpanded') === 'false') {
+            document.documentElement.classList.add('sidebar-collapsed');
+        }
+    </script>
 
     <!-- Memanggil potongan sidebar -->
     @auth
         @include('layouts.partials.sidebar')
     @endauth
 
-    <div class="flex-1 flex flex-col h-screen overflow-hidden">
+    <div class="flex-1 flex flex-col h-screen overflow-hidden w-full relative">
         <!-- Memanggil potongan navbar -->
         @include('layouts.partials.navbar')
 
@@ -26,21 +67,30 @@
     </div>
 
     <script>
-        // Script untuk mengatur buka-tutup sidebar di mobile
         function toggleSidebar() {
+            const isDesktop = window.innerWidth >= 1024;
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('sidebar-overlay');
             
-            if (sidebar.classList.contains('-translate-x-full')) {
-                // Buka sidebar
-                sidebar.classList.remove('-translate-x-full');
-                overlay.classList.remove('hidden');
-                setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+            if (isDesktop) {
+                // Desktop: Toggle collapsed class
+                const html = document.documentElement;
+                html.classList.toggle('sidebar-collapsed');
+                
+                // Simpan state di localStorage
+                const isExpanded = !html.classList.contains('sidebar-collapsed');
+                localStorage.setItem('sidebarExpanded', isExpanded);
             } else {
-                // Tutup sidebar
-                sidebar.classList.add('-translate-x-full');
-                overlay.classList.add('opacity-0');
-                setTimeout(() => overlay.classList.add('hidden'), 300);
+                // Mobile: Toggle off-canvas
+                if (sidebar.classList.contains('-translate-x-full')) {
+                    sidebar.classList.remove('-translate-x-full');
+                    overlay.classList.remove('hidden');
+                    setTimeout(() => overlay.classList.remove('opacity-0'), 10);
+                } else {
+                    sidebar.classList.add('-translate-x-full');
+                    overlay.classList.add('opacity-0');
+                    setTimeout(() => overlay.classList.add('hidden'), 300);
+                }
             }
         }
     </script>
