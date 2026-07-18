@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat Datang - SahabatKelas</title>
+    <link rel="icon" type="image/png" href="/img/logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hero-grid {
@@ -20,7 +21,7 @@
     <header class="sticky top-0 z-40 border-b border-gray-100 bg-white/90 backdrop-blur-xl">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="/img/logo.png" alt="Logo" class="h-8 w-auto">
+                
                 <div>
                     <p class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 tracking-tight">SahabatKelas</p>
                 </div>
@@ -56,7 +57,7 @@
             </div>
             <div class="relative">
                 <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-teal-200 to-blue-200 opacity-50 blur-2xl"></div>
-                <img src="/img/hero.png" alt="Siswa Belajar" class="relative rounded-3xl shadow-2xl object-cover w-full aspect-video md:aspect-[4/3]">
+                <img src="/img/logo.png" alt="Siswa Belajar" class="relative rounded-3xl shadow-2xl object-cover w-full aspect-video md:aspect-[4/3]">
             </div>
         </div>
     </main>
