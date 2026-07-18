@@ -56,12 +56,16 @@ class SafeReportController extends Controller
             $report = SafeReport::create($validated);
 
             // 5. Hitung Risiko Awal secara instan
-            // Jika prioritas='tinggi' atau rasa_tidak_aman='ya', fungsi ini akan langsung menandai Risiko Tinggi
             $riskService->recalculateRisk($siswa->id_siswa);
 
             // 6. Lempar teks ke AI secara Asynchronous
-            // Proses ini akan berjalan di belakang layar
-            ProcessIndoBertNlp::dispatch($report);
+            // Jika queue driver adalah 'sync' dan FastAPI mati, ini akan melempar exception.
+            // Kita bungkus dengan try-catch terpisah agar kegagalan AI tidak membatalkan laporan.
+            try {
+                ProcessIndoBertNlp::dispatch($report);
+            } catch (\Throwable $e) {
+                \Illuminate\Support\Facades\Log::error('AI Analysis terganggu: ' . $e->getMessage());
+            }
 
             // 7. Kembalikan respons ke siswa seketika
             return redirect('/siswa/beranda')->with('success', 'Laporan berhasil dikirim secara aman dan akan segera ditindaklanjuti. Terima kasih atas keberanianmu.');
