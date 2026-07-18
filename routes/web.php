@@ -8,26 +8,23 @@ use App\Http\Controllers\GuruController;
 use App\Http\Controllers\AdminController;
 
 Route::get('/', function () {
+    if (Auth::check()) {
+        $role = Auth::user()->role;
+        return match ($role) {
+            'admin' => redirect()->route('admin.dashboard'),
+            'guru' => redirect()->route('guru.dashboard'),
+            'siswa' => redirect()->route('siswa.beranda'),
+            default => redirect('/login'),
+        };
+    }
     return redirect('/login');
 });
 
-Route::view(
-    '/landing',
-    'landing'
-)->name('landing');
+Route::view('/landing', 'landing')->name('landing');
 
-// Rute untuk tamu (belum login)
-Route::middleware('guest')->group(function () {
-    Route::get(
-        '/login',
-        [AuthController::class, 'showLoginForm']
-    )->name('login');
-
-    Route::post(
-        '/login',
-        [AuthController::class, 'login']
-    )->name('login.process');
-});
+// Rute untuk tamu (belum login) dan redirect jika sudah login ditangani di AuthController
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('login.process');
 
 // Rute terproteksi (sudah login)
 Route::middleware('auth')->group(function () {

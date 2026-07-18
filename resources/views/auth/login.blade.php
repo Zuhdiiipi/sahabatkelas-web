@@ -97,7 +97,7 @@
                 </div>
             @endif
 
-            <form action="{{ route('login.process') }}" method="POST" class="space-y-5">
+            <form action="/login" method="POST" class="space-y-5">
                 @csrf
                 <div>
                     <label for="email" class="block text-sm font-semibold text-gray-700 mb-1.5">Alamat Email</label>
