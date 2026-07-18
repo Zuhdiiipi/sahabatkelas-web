@@ -380,38 +380,6 @@
     </div>
 </footer>
 
-<script>
-    // Simple script to add shadow to navbar on scroll
-    window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        if (window.scrollY > 20) {
-            header.classList.add('shadow-md', 'bg-white/95');
-            header.classList.remove('bg-white/50');
-        } else {
-            header.classList.remove('shadow-md');
-            header.classList.add('bg-white/50');
-        }
-    });
-
-    // Login Modal Logic
-    const modal = document.getElementById('login-modal');
-    function openLoginModal() {
-        modal.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeLoginModal() {
-        modal.classList.add('hidden');
-        document.body.style.overflow = '';
-    }
-
-    // Auto-open modal on the login page so the form is visible right away
-    openLoginModal();
-    
-    @if($errors->any())
-        openLoginModal();
-    @endif
-</script>
-
 <!-- Login Modal -->
 <div id="login-modal" class="fixed inset-0 z-[100] flex items-center justify-center hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="fixed inset-0 bg-gray-900/60 transition-opacity backdrop-blur-sm" onclick="closeLoginModal()"></div>
@@ -451,6 +419,42 @@
         </form>
     </div>
 </div>
+
+<script>
+    // Simple script to add shadow to navbar on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 20) {
+            header.classList.add('shadow-md', 'bg-white/95');
+            header.classList.remove('bg-white/50');
+        } else {
+            header.classList.remove('shadow-md');
+            header.classList.add('bg-white/50');
+        }
+    });
+
+    // Login Modal Logic
+    const modal = document.getElementById('login-modal');
+    function openLoginModal() {
+        if(modal) {
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+    function closeLoginModal() {
+        if(modal) {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+    }
+
+    // Auto-open modal on the login page so the form is visible right away
+    openLoginModal();
+    
+    @if($errors->any())
+        openLoginModal();
+    @endif
+</script>
 
 </body>
 </html>
