@@ -10,6 +10,13 @@
         html { scroll-behavior: smooth; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased font-sans">
@@ -71,6 +78,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <img src="/img/logo.png" alt="SahabatKelas Logo" class="mx-auto h-24 md:h-32 lg:h-40 w-auto mb-8 animate-float drop-shadow-2xl">
             <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
                 Mengenali lebih awal, <br/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">mendampingi lebih terarah.</span>
