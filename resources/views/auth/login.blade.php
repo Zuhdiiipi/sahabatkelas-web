@@ -71,10 +71,10 @@
         <div class="absolute inset-0 bg-gradient-to-r from-teal-900/50 to-blue-900/50"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h3 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
+            <h4 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
                 Mengenali lebih awal, <br/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">mendampingi lebih terarah</span>
-            </h3>
+            </h4>
             
             <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
                 Platform cerdas untuk mendeteksi dini risiko perundungan, memetakan kondisi psikologis siswa, dan membangun lingkungan belajar yang aman & nyaman di sekolah.
