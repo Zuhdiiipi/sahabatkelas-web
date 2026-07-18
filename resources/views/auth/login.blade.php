@@ -22,8 +22,7 @@
             <div class="flex items-center gap-3">
                 <img src="/img/logo.png" alt="Logo" class="h-8 w-auto">
                 <div>
-                    <p class="text-lg font-bold text-gray-900 leading-none">SahabatKelas</p>
-                    <p class="text-[10px] font-semibold text-teal-600 mt-1">SEKOLAH AMAN, SISWA NYAMAN</p>
+                    <p class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 tracking-tight">SahabatKelas</p>
                 </div>
             </div>
             <div>
@@ -38,8 +37,10 @@
     <main class="flex-grow flex items-center relative overflow-hidden bg-gradient-to-b from-teal-50/80 via-white to-white hero-grid">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
             <div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-gray-900 leading-tight">
-                    Menciptakan Lingkungan <br><span class="text-teal-600">Belajar yang Nyaman</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-5xl font-black tracking-tight text-gray-900 leading-tight">
+                    SahabatKelas, <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">mengenali lebih awal,</span> <br>
+                    mendampingi lebih terarah.
                 </h1>
                 <p class="mt-6 text-lg leading-relaxed text-gray-600">
                     SahabatKelas hadir untuk mendukung sekolah, guru, dan siswa dalam mewujudkan ruang belajar yang aman, suportif, dan bebas perundungan.
