@@ -56,42 +56,57 @@
         }
 
         /* Global Dark Mode Overrides */
-        html.dark body {
-            background-color: #0f172a; /* slate-900 */
-            color: #f8fafc; /* slate-50 */
-        }
-        html.dark main {
-            background-color: #0f172a !important; /* slate-900 */
-        }
-        /* Ubah semua elemen kartu/background putih menjadi slate gelap */
-        html.dark .bg-white {
-            background-color: #1e293b !important; /* slate-800 */
-            border-color: #334155 !important; /* slate-700 */
-        }
-        html.dark .bg-gray-50 {
-            background-color: #0f172a !important; /* slate-900 */
-        }
-        html.dark .bg-gray-100 {
-            background-color: #334155 !important; /* slate-700 */
-        }
-        /* Sesuaikan teks abu-abu/hitam menjadi terang */
-        html.dark .text-gray-800, html.dark .text-gray-900, html.dark .text-gray-700 {
-            color: #f8fafc !important; /* slate-50 */
-        }
-        html.dark .text-gray-500, html.dark .text-gray-600, html.dark .text-gray-400 {
-            color: #94a3b8 !important; /* slate-400 */
-        }
-        /* Sesuaikan border */
-        html.dark .border-gray-100, html.dark .border-gray-200 {
-            border-color: #334155 !important; /* slate-700 */
-        }
-        html.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
-            border-color: #334155 !important;
-        }
-        html.dark nav {
-            background-color: #1e293b !important;
-            border-bottom-color: #334155 !important;
-        }
+        html.dark body { background-color: #0f172a; color: #f8fafc; }
+        html.dark main { background-color: #0f172a !important; }
+        
+        /* Neutral backgrounds */
+        html.dark .bg-white { background-color: #1e293b !important; border-color: #334155 !important; }
+        html.dark .bg-gray-50 { background-color: #0f172a !important; }
+        html.dark .bg-gray-100 { background-color: #334155 !important; }
+        
+        /* Text Grays */
+        html.dark .text-gray-800, html.dark .text-gray-900, html.dark .text-gray-700 { color: #f8fafc !important; }
+        html.dark .text-gray-500, html.dark .text-gray-600, html.dark .text-gray-400 { color: #94a3b8 !important; }
+        
+        /* Borders Neutral */
+        html.dark .border-gray-100, html.dark .border-gray-200 { border-color: #334155 !important; }
+        html.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]) { border-color: #334155 !important; }
+        
+        html.dark nav { background-color: #1e293b !important; border-bottom-color: #334155 !important; }
+
+        /* Color Backgrounds (Light to Dark) */
+        html.dark .bg-blue-50 { background-color: rgba(30, 58, 138, 0.3) !important; } /* blue-900/30 */
+        html.dark .bg-teal-50 { background-color: rgba(19, 78, 74, 0.3) !important; } /* teal-900/30 */
+        html.dark .bg-amber-50 { background-color: rgba(120, 53, 15, 0.3) !important; } /* amber-900/30 */
+        html.dark .bg-orange-50 { background-color: rgba(124, 45, 18, 0.3) !important; } /* orange-900/30 */
+        html.dark .bg-violet-50 { background-color: rgba(76, 29, 149, 0.3) !important; } /* violet-900/30 */
+        html.dark .bg-red-50 { background-color: rgba(127, 29, 29, 0.3) !important; } /* red-900/30 */
+        html.dark .bg-green-50 { background-color: rgba(20, 83, 45, 0.3) !important; } /* green-900/30 */
+        
+        html.dark .bg-red-100 { background-color: rgba(127, 29, 29, 0.5) !important; } /* red-900/50 */
+        
+        /* Color Text (Dark to Light) */
+        html.dark .text-blue-600, html.dark .text-blue-700 { color: #60a5fa !important; } /* blue-400 */
+        html.dark .text-teal-600, html.dark .text-teal-700 { color: #2dd4bf !important; } /* teal-400 */
+        html.dark .text-amber-500, html.dark .text-amber-600, html.dark .text-amber-700 { color: #fbbf24 !important; } /* amber-400 */
+        html.dark .text-orange-400, html.dark .text-orange-500, html.dark .text-orange-600, html.dark .text-orange-700 { color: #fb923c !important; } /* orange-400 */
+        html.dark .text-violet-600, html.dark .text-violet-700 { color: #a78bfa !important; } /* violet-400 */
+        html.dark .text-red-500, html.dark .text-red-600, html.dark .text-red-700 { color: #f87171 !important; } /* red-400 */
+        html.dark .text-green-600, html.dark .text-green-700 { color: #4ade80 !important; } /* green-400 */
+
+        /* Color Borders */
+        html.dark .border-blue-100, html.dark .border-blue-200 { border-color: rgba(30, 58, 138, 0.5) !important; }
+        html.dark .border-teal-100, html.dark .border-teal-200 { border-color: rgba(19, 78, 74, 0.5) !important; }
+        html.dark .border-amber-100, html.dark .border-amber-200 { border-color: rgba(120, 53, 15, 0.5) !important; }
+        html.dark .border-orange-100, html.dark .border-orange-200 { border-color: rgba(124, 45, 18, 0.5) !important; }
+        html.dark .border-violet-100, html.dark .border-violet-200 { border-color: rgba(76, 29, 149, 0.5) !important; }
+        html.dark .border-red-100, html.dark .border-red-200 { border-color: rgba(127, 29, 29, 0.5) !important; }
+
+        /* Exceptions where background is used on hover for buttons */
+        html.dark .group:hover .group-hover\:bg-blue-600 { background-color: #2563eb !important; color: #ffffff !important; }
+        html.dark .group:hover .group-hover\:bg-amber-500 { background-color: #f59e0b !important; color: #ffffff !important; }
+        html.dark .group:hover .group-hover\:bg-teal-600 { background-color: #0d9488 !important; color: #ffffff !important; }
+        html.dark .group:hover .group-hover\:bg-violet-600 { background-color: #7c3aed !important; color: #ffffff !important; }
     </style>
 </head>
 <body class="bg-gray-50 font-sans flex h-screen overflow-hidden">
