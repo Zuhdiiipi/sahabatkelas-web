@@ -43,12 +43,7 @@
             class="text-xl font-bold text-teal-700
                    flex items-center gap-2 shrink-0"
         >
-            <span
-                class="w-9 h-9 rounded-xl bg-teal-600
-                       text-white flex items-center justify-center"
-            >
-                S
-            </span>
+            <img src="/img/logo.png" alt="Logo" class="w-9 h-9 object-contain">
 
             <span class="hidden sm:inline">
                 SahabatKelas
