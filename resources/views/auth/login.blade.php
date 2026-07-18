@@ -6,7 +6,7 @@
 <div class="bg-white w-full max-w-md p-8 rounded-2xl shadow-sm border border-teal-100">
     <div class="text-center mb-8">
         <img src="/img/logo.png" alt="Logo SahabatKelas" class="mx-auto h-20 w-auto mb-4">
-        <h1 class="text-3xl font-bold text-teal-700 mb-2">SahabatKelas</h1>
+        <h1 class="text-3xl font-bold text-teal-700 mb-2">Sahabat Kelas</h1>
         <p class="text-sm text-gray-500">Silakan masuk menggunakan akun yang telah diberikan oleh sekolah.</p>
     </div>
 
