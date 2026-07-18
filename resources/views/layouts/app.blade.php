@@ -60,7 +60,7 @@
         html.dark main { background-color: #0f172a !important; }
         
         /* Neutral backgrounds */
-        html.dark .bg-white { background-color: #1e293b !important; border-color: #334155 !important; }
+        html.dark .bg-white { background-color: #1e293b !important; border-color: transparent !important; }
         html.dark .bg-gray-50 { background-color: #0f172a !important; }
         html.dark .bg-gray-100 { background-color: #334155 !important; }
         
@@ -69,10 +69,10 @@
         html.dark .text-gray-500, html.dark .text-gray-600, html.dark .text-gray-400 { color: #94a3b8 !important; }
         
         /* Borders Neutral */
-        html.dark .border-gray-100, html.dark .border-gray-200 { border-color: #334155 !important; }
+        html.dark .border-gray-100, html.dark .border-gray-200 { border-color: transparent !important; }
         html.dark .divide-gray-100 > :not([hidden]) ~ :not([hidden]) { border-color: #334155 !important; }
         
-        html.dark nav { background-color: #1e293b !important; border-bottom-color: #334155 !important; }
+        html.dark nav { background-color: #1e293b !important; border-bottom-color: #0f172a !important; }
 
         /* Color Backgrounds (Light to Dark) */
         html.dark .bg-blue-50 { background-color: rgba(30, 58, 138, 0.3) !important; } /* blue-900/30 */
@@ -101,6 +101,13 @@
         html.dark .border-orange-100, html.dark .border-orange-200 { border-color: rgba(124, 45, 18, 0.5) !important; }
         html.dark .border-violet-100, html.dark .border-violet-200 { border-color: rgba(76, 29, 149, 0.5) !important; }
         html.dark .border-red-100, html.dark .border-red-200 { border-color: rgba(127, 29, 29, 0.5) !important; }
+
+        /* Shadows overrides */
+        html.dark .shadow-blue-200\/50, html.dark .hover\:shadow-blue-100\/50:hover { --tw-shadow-color: rgba(30, 58, 138, 0.8) !important; }
+        html.dark .shadow-teal-200\/50, html.dark .hover\:shadow-teal-100\/50:hover { --tw-shadow-color: rgba(19, 78, 74, 0.8) !important; }
+        html.dark .shadow-amber-200\/50, html.dark .hover\:shadow-amber-100\/50:hover { --tw-shadow-color: rgba(120, 53, 15, 0.8) !important; }
+        html.dark .shadow-orange-200\/50, html.dark .hover\:shadow-orange-100\/50:hover { --tw-shadow-color: rgba(124, 45, 18, 0.8) !important; }
+        html.dark .shadow-violet-200\/50, html.dark .hover\:shadow-violet-100\/50:hover { --tw-shadow-color: rgba(76, 29, 149, 0.8) !important; }
 
         /* Exceptions where background is used on hover for buttons */
         html.dark .group:hover .group-hover\:bg-blue-600 { background-color: #2563eb !important; color: #ffffff !important; }
