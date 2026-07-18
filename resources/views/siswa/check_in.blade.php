@@ -49,35 +49,35 @@
             </div>
             
             <div class="grid grid-cols-5 gap-2 sm:gap-4 text-center">
-                <label class="cursor-pointer group">
+                <label class="cursor-pointer group relative">
                     <input type="radio" name="perasaan" value="sangat_baik" class="peer sr-only" required>
                     <div class="peer-checked:bg-green-100 peer-checked:ring-4 peer-checked:ring-green-500/30 peer-checked:border-green-500 rounded-2xl p-4 border border-transparent group-hover:bg-gray-50 transition-all duration-300 group-hover:-translate-y-1">
                         <div class="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">😄</div>
                         <div class="text-xs font-semibold text-gray-600 peer-checked:text-green-700">Sangat baik</div>
                     </div>
                 </label>
-                <label class="cursor-pointer group">
+                <label class="cursor-pointer group relative">
                     <input type="radio" name="perasaan" value="baik" class="peer sr-only">
                     <div class="peer-checked:bg-teal-100 peer-checked:ring-4 peer-checked:ring-teal-500/30 peer-checked:border-teal-500 rounded-2xl p-4 border border-transparent group-hover:bg-gray-50 transition-all duration-300 group-hover:-translate-y-1">
                         <div class="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">🙂</div>
                         <div class="text-xs font-semibold text-gray-600 peer-checked:text-teal-700">Baik</div>
                     </div>
                 </label>
-                <label class="cursor-pointer group">
+                <label class="cursor-pointer group relative">
                     <input type="radio" name="perasaan" value="biasa_saja" class="peer sr-only">
                     <div class="peer-checked:bg-yellow-100 peer-checked:ring-4 peer-checked:ring-yellow-500/30 peer-checked:border-yellow-500 rounded-2xl p-4 border border-transparent group-hover:bg-gray-50 transition-all duration-300 group-hover:-translate-y-1">
                         <div class="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">😐</div>
                         <div class="text-xs font-semibold text-gray-600 peer-checked:text-yellow-700">Biasa saja</div>
                     </div>
                 </label>
-                <label class="cursor-pointer group">
+                <label class="cursor-pointer group relative">
                     <input type="radio" name="perasaan" value="kurang_baik" class="peer sr-only">
                     <div class="peer-checked:bg-orange-100 peer-checked:ring-4 peer-checked:ring-orange-500/30 peer-checked:border-orange-500 rounded-2xl p-4 border border-transparent group-hover:bg-gray-50 transition-all duration-300 group-hover:-translate-y-1">
                         <div class="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">🙁</div>
                         <div class="text-xs font-semibold text-gray-600 peer-checked:text-orange-700">Kurang baik</div>
                     </div>
                 </label>
-                <label class="cursor-pointer group">
+                <label class="cursor-pointer group relative">
                     <input type="radio" name="perasaan" value="sangat_tidak_baik" class="peer sr-only">
                     <div class="peer-checked:bg-red-100 peer-checked:ring-4 peer-checked:ring-red-500/30 peer-checked:border-red-500 rounded-2xl p-4 border border-transparent group-hover:bg-gray-50 transition-all duration-300 group-hover:-translate-y-1">
                         <div class="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">😢</div>
@@ -117,7 +117,7 @@
                     <p class="text-sm font-semibold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">{{ $teks }}</p>
                     <div class="grid grid-cols-2 md:grid-cols-5 gap-2">
                         @foreach($skala as $val => $label)
-                        <label class="cursor-pointer">
+                        <label class="cursor-pointer relative">
                             <input type="radio" name="{{ $name }}" value="{{ $val }}" class="peer sr-only" required>
                             <div class="text-center py-2.5 px-2 rounded-xl border border-gray-200 text-xs font-medium text-gray-600 peer-checked:bg-blue-50 peer-checked:border-blue-500 peer-checked:text-blue-700 hover:bg-gray-50 hover:border-blue-300 transition-all">
                                 {{ $label }}
@@ -132,11 +132,11 @@
                 <div class="group pt-2">
                     <p class="text-sm font-semibold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors">Saya melihat teman lain mengalami perlakuan tidak menyenangkan.</p>
                     <div class="flex gap-4">
-                        <label class="cursor-pointer w-32">
+                        <label class="cursor-pointer w-32 relative">
                             <input type="radio" name="melihat_bullying" value="ya" class="peer sr-only" required>
                             <div class="text-center py-2.5 rounded-xl border border-gray-200 text-sm font-medium peer-checked:bg-blue-50 peer-checked:border-blue-500 peer-checked:text-blue-700 hover:bg-gray-50 hover:border-blue-300 transition-all">Ya</div>
                         </label>
-                        <label class="cursor-pointer w-32">
+                        <label class="cursor-pointer w-32 relative">
                             <input type="radio" name="melihat_bullying" value="tidak" class="peer sr-only">
                             <div class="text-center py-2.5 rounded-xl border border-gray-200 text-sm font-medium peer-checked:bg-blue-50 peer-checked:border-blue-500 peer-checked:text-blue-700 hover:bg-gray-50 hover:border-blue-300 transition-all">Tidak</div>
                         </label>
@@ -153,11 +153,11 @@
             </div>
             <p class="text-sm font-medium text-gray-600 mb-4 ml-11">Apakah kamu memiliki seseorang yang dapat dipercaya untuk bercerita tentang masalahmu?</p>
             <div class="flex flex-wrap gap-3 ml-0 md:ml-11">
-                <label class="cursor-pointer">
+                <label class="cursor-pointer relative">
                     <input type="radio" name="teman_diskusi" value="ada" class="peer sr-only" required>
                     <div class="py-2.5 px-6 rounded-full border border-gray-200 text-sm font-medium peer-checked:bg-teal-50 peer-checked:border-teal-500 peer-checked:text-teal-700 hover:bg-gray-50 hover:border-teal-300 transition-all">Ya, saya punya</div>
                 </label>
-                <label class="cursor-pointer">
+                <label class="cursor-pointer relative">
                     <input type="radio" name="teman_diskusi" value="tidak_ada" class="peer sr-only">
                     <div class="py-2.5 px-6 rounded-full border border-gray-200 text-sm font-medium peer-checked:bg-blue-50 peer-checked:border-blue-500 peer-checked:text-blue-700 hover:bg-gray-50 hover:border-blue-300 transition-all">Belum memiliki / Tidak ingin menjawab</div>
                 </label>
@@ -184,15 +184,15 @@
             </div>
             <p class="text-sm font-medium text-gray-600 mb-4 ml-11">Apakah kamu ingin berbicara dengan guru BK atau wali kelas mengenai kondisimu saat ini?</p>
             <div class="flex flex-col sm:flex-row gap-4 ml-0 md:ml-11">
-                <label class="cursor-pointer flex-1">
+                <label class="cursor-pointer flex-1 relative">
                     <input type="radio" name="ingin_dibantu" value="ya_mendesak" class="peer sr-only" required>
                     <div class="text-center py-4 px-2 rounded-2xl border border-gray-200 text-sm font-bold peer-checked:bg-orange-50 peer-checked:border-orange-400 peer-checked:text-orange-800 hover:bg-gray-50 hover:border-orange-300 transition-all">Ya, secepatnya</div>
                 </label>
-                <label class="cursor-pointer flex-1">
+                <label class="cursor-pointer flex-1 relative">
                     <input type="radio" name="ingin_dibantu" value="ya_biasa" class="peer sr-only">
                     <div class="text-center py-4 px-2 rounded-2xl border border-gray-200 text-sm font-bold peer-checked:bg-blue-50 peer-checked:border-blue-400 peer-checked:text-blue-800 hover:bg-gray-50 hover:border-blue-300 transition-all">Ya, tapi tidak mendesak</div>
                 </label>
-                <label class="cursor-pointer flex-1">
+                <label class="cursor-pointer flex-1 relative">
                     <input type="radio" name="ingin_dibantu" value="tidak" class="peer sr-only">
                     <div class="text-center py-4 px-2 rounded-2xl border border-gray-200 text-sm font-bold peer-checked:bg-gray-100 peer-checked:border-gray-400 peer-checked:text-gray-700 hover:bg-gray-50 hover:border-gray-300 transition-all">Belum / Tidak ingin</div>
                 </label>
