@@ -33,8 +33,10 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-teal-400 to-blue-500 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-lg shadow-teal-200/50">S</div>
-            <span class="text-xl font-black tracking-tight text-gray-900">SahabatKelas<span class="text-teal-500">.</span></span>
+            <img src="/img/logo.png" alt="Logo" class="h-8 w-auto">
+            <div>
+                <span class="text-xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">SahabatKelas</span>
+            </div>
         </div>
         
         <div class="hidden lg:flex items-center gap-8 font-semibold text-sm text-gray-600">
@@ -47,12 +49,12 @@
         <div class="flex items-center gap-4">
             @auth
                 <span class="hidden md:inline text-sm text-gray-500 font-medium">Halo, {{ $user?->siswa?->nama ?? $user?->guru?->nama ?? $user?->name ?? $user?->email }}</span>
-                <a href="{{ $dashboardRoute }}" class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-6 py-2.5 text-sm font-bold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-200/50">
+                <a href="{{ $dashboardRoute }}" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-bold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200/50">
                     {{ $dashboardLabel }}
                 </a>
             @else
-                <button onclick="openLoginModal()" class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-6 py-2.5 text-sm font-bold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-200/50">
-                    Masuk / Daftar
+                <button onclick="openLoginModal()" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-bold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200/50">
+                    Login
                 </button>
             @endauth
         </div>
@@ -79,7 +81,7 @@
             
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
                 Mulai Masa Depan yang <br/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">Aman & Cerah</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">Aman & Cerah</span>
             </h1>
             
             <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -87,7 +89,7 @@
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#tentang" class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-8 py-4 text-base font-bold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30 w-full sm:w-auto">
+                <a href="#tentang" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 text-base font-bold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30 w-full sm:w-auto">
                     Pelajari Lebih Lanjut &rarr;
                 </a>
                 @auth
@@ -96,7 +98,7 @@
                     </a>
                 @else
                     <button onclick="openLoginModal()" class="inline-flex items-center justify-center rounded-xl bg-white px-8 py-4 text-base font-bold text-slate-900 hover:bg-gray-100 transition-colors w-full sm:w-auto">
-                        Mulai Sekarang
+                        Login
                     </button>
                 @endauth
             </div>
@@ -128,9 +130,9 @@
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-2xl p-8 shadow-xl shadow-gray-200/50 border-t-4 border-orange-500 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-orange-50 transition-colors">03</div>
-                <div class="w-14 h-14 bg-orange-50 text-orange-600 rounded-2xl flex items-center justify-center mb-6 relative z-10">
+            <div class="bg-white rounded-2xl p-8 shadow-xl shadow-gray-200/50 border-t-4 border-yellow-400 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-yellow-50 transition-colors">03</div>
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-600 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3 relative z-10">Analitik Guru</h3>
@@ -138,9 +140,9 @@
             </div>
 
             <!-- Card 4 -->
-            <div class="bg-white rounded-2xl p-8 shadow-xl shadow-gray-200/50 border-t-4 border-violet-500 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
-                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-violet-50 transition-colors">04</div>
-                <div class="w-14 h-14 bg-violet-50 text-violet-600 rounded-2xl flex items-center justify-center mb-6 relative z-10">
+            <div class="bg-white rounded-2xl p-8 shadow-xl shadow-gray-200/50 border-t-4 border-teal-600 hover:-translate-y-2 transition-transform duration-300 relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-4 text-6xl font-black text-gray-50 opacity-50 group-hover:text-teal-50 transition-colors">04</div>
+                <div class="w-14 h-14 bg-teal-50 text-teal-700 rounded-2xl flex items-center justify-center mb-6 relative z-10">
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3 relative z-10">Dukungan Psikologi</h3>
@@ -166,7 +168,7 @@
                     </div>
                     
                     <!-- Floating Badge -->
-                    <div class="absolute -bottom-8 -left-8 bg-orange-500 text-white p-6 rounded-3xl shadow-xl shadow-orange-500/30 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                    <div class="absolute -bottom-8 -left-8 bg-blue-600 text-white p-6 rounded-3xl shadow-xl shadow-blue-500/30 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
                         <div class="bg-white/20 p-3 rounded-2xl">
                             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                         </div>
@@ -179,7 +181,7 @@
 
                 <!-- Text Content -->
                 <div>
-                    <p class="text-orange-500 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+                    <p class="text-blue-600 font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                         TENTANG SAHABATKELAS
                     </p>
@@ -211,7 +213,7 @@
                         </div>
                     </div>
 
-                    <a href="#artikel" class="inline-flex items-center justify-center rounded-xl bg-orange-500 px-8 py-4 text-sm font-bold text-white hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30">
+                    <a href="#artikel" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 text-sm font-bold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/30">
                         Temukan Lebih Lanjut &rarr;
                     </a>
                 </div>
@@ -402,6 +404,9 @@
         document.body.style.overflow = '';
     }
 
+    // Auto-open modal on the login page so the form is visible right away
+    openLoginModal();
+    
     @if($errors->any())
         openLoginModal();
     @endif
@@ -418,7 +423,7 @@
         </button>
 
         <div class="text-center mb-8 mt-2">
-            <div class="w-16 h-16 bg-teal-500 rounded-2xl flex items-center justify-center text-white font-black text-3xl mx-auto mb-4">S</div>
+            <img src="/img/logo.png" alt="Logo SahabatKelas" class="mx-auto h-16 w-auto mb-4 drop-shadow-md">
             <h2 class="text-3xl font-bold text-gray-900 mb-2">SahabatKelas</h2>
             <p class="text-sm text-gray-500">Silakan masuk menggunakan akun yang telah diberikan oleh sekolah.</p>
         </div>
@@ -440,7 +445,7 @@
                 <label for="password" class="block text-sm font-semibold text-gray-700 mb-1.5">Kata Sandi</label>
                 <input type="password" id="password" name="password" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-all">
             </div>
-            <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3.5 rounded-xl mt-4 transition-all shadow-md shadow-orange-200 active:scale-[0.98]">
+            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl mt-4 transition-all shadow-md shadow-blue-200 active:scale-[0.98]">
                 Masuk ke Akun
             </button>
         </form>
