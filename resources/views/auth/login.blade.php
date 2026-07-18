@@ -71,14 +71,6 @@
         <div class="absolute inset-0 bg-gradient-to-r from-teal-900/50 to-blue-900/50"></div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-flex items-center gap-2 rounded-full border border-teal-500/30 bg-teal-500/10 backdrop-blur-md px-4 py-2 text-xs font-bold text-teal-300 mb-6">
-                <span class="relative flex w-2 h-2">
-                    <span class="absolute inline-flex w-full h-full rounded-full bg-teal-400 opacity-75 animate-ping"></span>
-                    <span class="relative inline-flex w-2 h-2 rounded-full bg-teal-500"></span>
-                </span>
-                SELAMAT DATANG DI SAHABATKELAS!
-            </div>
-            
             <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight tracking-tight">
                 Mengenali lebih awal, <br/>
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-300">mendampingi lebih terarah</span>
