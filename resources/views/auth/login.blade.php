@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat Datang - SahabatKelas</title>
-    <link rel="icon" type="image/png" href="/img/logo.png">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .hero-grid {
@@ -36,9 +36,9 @@
 
     {{-- Hero Section --}}
     <main class="flex-grow flex items-center relative overflow-hidden bg-gradient-to-b from-teal-50/80 via-white to-white hero-grid">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 text-center flex flex-col items-center relative z-10">
             <div>
-                <img src="/img/logo.png" alt="Logo SahabatKelas" class="h-20 w-20 rounded-full object-cover shadow-md border-2 border-teal-100 mb-6 bg-white">
+                <img src="/img/logo.png" alt="Logo SahabatKelas" class="h-32 w-32 md:h-40 md:w-40 object-contain mx-auto mb-8 drop-shadow-xl">
                 <h1 class="text-4xl sm:text-5xl lg:text-5xl font-black tracking-tight text-gray-900 leading-tight">
                     SahabatKelas, <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">mengenali lebih awal,</span> <br>
@@ -55,10 +55,6 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div class="relative">
-                <div class="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-teal-200 to-blue-200 opacity-50 blur-2xl"></div>
-                <img src="/img/hero.png" alt="Siswa Belajar" class="relative rounded-3xl shadow-2xl object-cover w-full aspect-video md:aspect-[4/3]">
             </div>
         </div>
     </main>
