@@ -106,7 +106,7 @@
                     <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
                 <h3 class="text-xl font-bold text-gray-900 mb-3 relative z-10">Deteksi Dini</h3>
-                <p class="text-gray-500 text-sm leading-relaxed relative z-10">Kenali potensi dan indikasi perundungan sejak awal melalui data check-in harian emosional siswa.</p>
+                <p class="text-gray-500 text-sm leading-relaxed relative z-10">Kenali potensi dan indikasi perundungan sejak awal melalui data check-in mingguan emosional siswa.</p>
             </div>
 
             <!-- Card 2 -->
@@ -194,7 +194,7 @@
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </div>
                             <div>
-                                <h4 class="text-gray-900 font-bold mb-1">Pemantauan Harian</h4>
+                                <h4 class="text-gray-900 font-bold mb-1">Pemantauan Mingguan</h4>
                                 <p class="text-sm text-gray-500 leading-relaxed">Sistem check-in yang mudah dan cepat untuk siswa.</p>
                             </div>
                         </div>

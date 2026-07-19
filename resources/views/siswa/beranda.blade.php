@@ -30,7 +30,7 @@
                     Halo, {{ auth()->user()?->siswa?->nama ?? (auth()->user()?->email ?? 'Siswa') }}! 👋
                 </h1>
                 <p class="text-blue-50 text-sm md:text-base max-w-xl leading-relaxed">
-                    Bagaimana kabarmu hari ini? Ingat, jangan ragu untuk bercerita jika ada hal yang mengganggu pikiranmu. Kami di sini untuk mendengarkan dan mendukungmu sepenuhnya.
+                    Bagaimana kabarmu minggu ini? Ingat, jangan ragu untuk bercerita jika ada hal yang mengganggu pikiranmu. Kami di sini untuk mendengarkan dan mendukungmu sepenuhnya.
                 </p>
             </div>
             <div class="hidden md:block shrink-0">
@@ -58,9 +58,9 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-700 transition-colors">Check-in Harian</h3>
+                <h3 class="text-xl font-bold text-gray-800 mb-2 group-hover:text-blue-700 transition-colors">Check-in Mingguan</h3>
                 <p class="text-gray-500 text-sm mb-6 leading-relaxed">
-                    Bagikan perasaan dan suasana belajarmu hari ini. Hanya butuh 1 menit untuk membantu kami memahamimu lebih baik.
+                    Bagikan perasaan dan suasana belajarmu minggu ini. Hanya butuh 1 menit untuk membantu kami memahamimu lebih baik.
                 </p>
             </div>
             <a href="{{ route('siswa.checkin.create') }}" class="block w-full text-center bg-blue-50 group-hover:bg-blue-600 text-blue-700 group-hover:text-white font-bold py-3.5 rounded-xl transition-all duration-300">

@@ -137,11 +137,11 @@
                 <span class="sidebar-text transition-opacity duration-300 whitespace-nowrap">Beranda</span>
             </a>
 
-            <a href="{{ route('siswa.checkin.create') }}" title="Check-in Harian" class="sidebar-menu-item group flex items-center px-3 py-2.5 text-sm rounded-r-xl rounded-l-sm transition-all {{ request()->routeIs('siswa.checkin.*') ? $kelasAktif : $kelasTidakAktif }}">
+            <a href="{{ route('siswa.checkin.create') }}" title="Check-in Mingguan" class="sidebar-menu-item group flex items-center px-3 py-2.5 text-sm rounded-r-xl rounded-l-sm transition-all {{ request()->routeIs('siswa.checkin.*') ? $kelasAktif : $kelasTidakAktif }}">
                 <svg class="sidebar-icon mr-3 w-5 h-5 flex-shrink-0 {{ request()->routeIs('siswa.checkin.*') ? $iconAktif : $iconTidakAktif }}" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span class="sidebar-text transition-opacity duration-300 whitespace-nowrap">Check-in Harian</span>
+                <span class="sidebar-text transition-opacity duration-300 whitespace-nowrap">Check-in</span>
             </a>
 
             <a href="{{ route('siswa.report.create') }}" title="Safe Report" class="sidebar-menu-item group flex items-center px-3 py-2.5 text-sm rounded-r-xl rounded-l-sm transition-all {{ request()->routeIs('siswa.report.*') ? $kelasAktif : $kelasTidakAktif }}">

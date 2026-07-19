@@ -402,7 +402,7 @@
                                     </p>
 
                                     <p class="text-xs text-gray-400">
-                                        Kondisi siswa hari ini
+                                        Kondisi siswa minggu ini
                                     </p>
                                 </div>
                             </div>

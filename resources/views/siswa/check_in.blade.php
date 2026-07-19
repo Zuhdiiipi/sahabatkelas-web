@@ -19,10 +19,10 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
                         </svg>
                     </div>
-                    <h1 class="text-3xl font-black tracking-tight">Check-in Harian</h1>
+                    <h1 class="text-3xl font-black tracking-tight">Check-in Mingguan</h1>
                 </div>
                 <p class="text-blue-50 text-base leading-relaxed max-w-2xl relative z-10 mb-5">
-                    Ceritakan kondisi kamu selama satu hari terakhir. Jawaban digunakan untuk membantu guru memberikan pendampingan yang sesuai.
+                    Ceritakan kondisi kamu selama satu minggu terakhir. Jawaban digunakan untuk membantu guru memberikan pendampingan yang sesuai.
                 </p>
                 <div class="flex flex-col sm:flex-row sm:items-center gap-3 text-xs">
                     <span class="bg-white/20 backdrop-blur-md border border-white/30 text-white px-4 py-2 rounded-xl font-medium shadow-sm flex items-center">
@@ -45,7 +45,7 @@
         <div class="bg-white p-7 rounded-3xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-lg hover:border-blue-100">
             <div class="flex items-center gap-3 mb-6 border-b border-gray-100 pb-4">
                 <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold">1</span>
-                <h2 class="text-xl font-bold text-gray-800">Bagaimana perasaanmu hari ini?</h2>
+                <h2 class="text-xl font-bold text-gray-800">Bagaimana perasaanmu minggu ini?</h2>
             </div>
             
             <div class="grid grid-cols-5 gap-2 sm:gap-4 text-center">
