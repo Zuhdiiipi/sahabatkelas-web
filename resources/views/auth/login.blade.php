@@ -85,7 +85,7 @@
             </h1>
             
             <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Platform cerdas untuk mendeteksi dini risiko perundungan, memetakan kondisi psikologis siswa, dan membangun lingkungan belajar yang aman & nyaman di sekolah.
+                Platform cerdas untuk mendeteksi dini risiko perundungan, memetakan kondisi psikologis siswa, dan membangun lingkungan belajar yang aman dan nyaman disekolah.
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
